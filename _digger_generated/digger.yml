@@ -1,0 +1,19 @@
+project:
+  name: buildtest0
+services:
+  node-0: !!python/object/apply:builtins.dict
+  - build_command: null
+    build_directory: null
+    container_port: '8080'
+    dockerfile: ./Dockerfile
+    health_check: /
+    lambda_handler: ''
+    load_balancer: true
+    name: node-0
+    path: ./
+    pk: 40
+    repository: diggerhq/a-nodeapp
+    service_name: node-0
+    service_type: container
+    task_cpu: '256'
+    task_memory: '512'

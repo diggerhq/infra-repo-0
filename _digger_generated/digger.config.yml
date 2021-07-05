@@ -1,0 +1,16 @@
+dbtest5: &id001
+  acm_certificate_arn_virginia: null
+  create_dns_record: false
+  dggr_acm_certificate_arn: arn:aws:acm:us-east-1:682903345738:certificate/253ba372-8836-4078-a447-5fdd57518e6a
+  dggr_acm_certificate_arn_virginia: arn:aws:acm:us-east-1:682903345738:certificate/253ba372-8836-4078-a447-5fdd57518e6a
+  dggr_hostname: dggr.app
+  dggr_zone_id: Z01023802GBWXW1MRJGTO
+  dns_zone_id: null
+  hostname: null
+  lb_ssl_certificate_arn: null
+  needs_postgres: true
+  rds_instance_type: db.t3.micro
+  use_dggr_domain: true
+dbthree: *id001
+lijljggh: *id001
+production: *id001
